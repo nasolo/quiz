@@ -7,7 +7,7 @@ export default class About extends Component{
 
     render(){
         return (
-            <div>
+            <div className="about-page">
                     <h3>About Page</h3>
             </div>
         )

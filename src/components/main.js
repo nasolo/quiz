@@ -8,7 +8,7 @@ export default class Main extends Component{
 
     render(){
         return (
-            <div>
+            <div className="main-page">
                 <h3>Main Page</h3>
             </div>
         )
