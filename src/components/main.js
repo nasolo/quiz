@@ -1,16 +1,20 @@
 // Node modules import
 import React, {Component} from 'react';
+import {connect} from 'react-redux';
 
 //Components import
 import ActivityLog from './main/activity-log';
-// Main Page
 
+import {fetchQuestion} from '../actions/questions'
 
 import QuestionInfo from './main/question-info'
 
+// Main Page
+class Main extends Component{
 
-export default class Main extends Component{
-
+componentWillMount(){
+    this.props.fetchQuestion();
+}
     render(){
         return (
             <div className="main-page">
@@ -21,3 +25,5 @@ export default class Main extends Component{
     }
 
 }
+
+export default connect(null, {fetchQuestion})(Main)
