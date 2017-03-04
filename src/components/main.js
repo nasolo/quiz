@@ -6,6 +6,8 @@ import ActivityLog from './main/activity-log';
 // Main Page
 
 
+import QuestionInfo from './main/question-info'
+
 
 export default class Main extends Component{
 
@@ -13,6 +15,7 @@ export default class Main extends Component{
         return (
             <div className="main-page">
                <ActivityLog />
+               <QuestionInfo />
             </div>
         )
     }
